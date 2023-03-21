@@ -6,9 +6,9 @@
  * Return:  1 to lowercases , 0 otherwise
  */
 
-int _islower(int c)
+int _islower(char c)
 {
-	if (c >= 'a' && c <= 'z')
+	if (c >= 97 && c <= 122)
 	{
 		return (1);
 	}
