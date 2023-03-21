@@ -1,19 +1,19 @@
 #include "main.h"
 /**
- * print_last_digit-prints the last digit of an interger.
- * @a:number to compute last digit.
- * Return:last digit.
+ * print_last_digit - self explian
+ * @num: int num should be trim
+ * Return: int digit
  */
 
-
-
-int print_last_digit(int a)
+int print_last_digit(int num)
 {
-	int last_digit;
+	int last_digit = 1;
 
-	last_digit = a %  10;
-	if (last_digit < 0)
-	{
-		last_digit = last_digit * -1;
-	}
-{
+	if (num < 0)
+		last_digit *= -1;
+
+	last_digit *= num % 10;
+	_putchar(last_digit + 48);
+
+	return (last_digit);
+}
