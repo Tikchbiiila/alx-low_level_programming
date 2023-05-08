@@ -1,0 +1,1 @@
+Fgets Fputs
